@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/style2">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="单词统计量"
+        android:background="@drawable/btn_style"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.robinhood.spark.SparkView
+        android:id="@+id/spark_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp"
+        android:background="@color/colorBg"
+        app:layout_constraintBottom_toTopOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/design_default_color_primary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="May 30,2020" />
+
+    <com.robinhood.ticker.TickerView
+        android:id="@+id/tickerView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:text="4,300"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#A984FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="个数："
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:chainUseRtl="true"
+        app:layout_constraintStart_toEndOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/spark_body" />
+</androidx.constraintlayout.widget.ConstraintLayout>

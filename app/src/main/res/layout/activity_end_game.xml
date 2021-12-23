@@ -68,7 +68,7 @@
             android:id="@+id/btnCateg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/firebrick"
+            android:background="@drawable/startbtn"
             android:text="单词本"
             android:textColor="@color/white"
             android:textSize="15dp" />
@@ -77,7 +77,7 @@
             android:id="@+id/btnNewGame"
             android:layout_width="155dp"
             android:layout_height="70dp"
-            android:backgroundTint="@color/purple_500"
+            android:background="@drawable/btn_style"
             android:text="New Game"
             android:textColor="@color/white"
             android:textSize="18dp" />
@@ -86,7 +86,7 @@
             android:id="@+id/btnNewCustom"
             android:layout_width="155dp"
             android:layout_height="70dp"
-            android:backgroundTint="@color/purple_500"
+            android:background="@drawable/btn_style"
             android:text="自定义"
             android:textColor="@color/white"
             android:textSize="18dp" />

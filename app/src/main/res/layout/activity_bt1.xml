@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".bt1Activity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@drawable/cardbg">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Welcome To"
+          android:textAlignment="center"
+          android:textSize="35sp" />
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="ATHENA'S WORD! "
+          android:textAlignment="center"
+          android:textSize="35sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="5dp"
+          android:text="登       录"
+          android:textAlignment="center"
+          android:textSize="40sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/user" />
+      <TextView
+          android:id="@+id/tv1"
+          android:layout_width="68dp"
+          android:layout_height="wrap_content"
+          android:text="用户名:"
+          android:textSize="20dp"
+          android:textColor="#000000"/>
+
+      <EditText
+          android:id="@+id/et1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="请输入"
+          android:inputType="text"
+          android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/psw" />
+      <TextView
+          android:id="@+id/tv2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="密码："
+          android:textSize="20dp"
+          android:textColor="#000000"/>
+
+      <EditText
+          android:id="@+id/et2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="请输入"
+          android:inputType="textPassword"
+          android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+      <CheckBox
+          android:id="@+id/cb1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="3dp"
+          android:layout_weight="1"
+          android:text="记住密码"
+          android:textSize="20sp"
+          android:textColor="#000000"
+          tools:ignore="TouchTargetSizeCheck"
+          />
+
+      <TextView
+          android:id="@+id/tv3"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="50dp"
+          android:layout_weight="1"
+          android:clickable="true"
+          android:gravity="right"
+          android:text="用户注册"
+          android:textColor="#000000"
+          android:textSize="20sp"
+          tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+      <Button
+          android:id="@+id/go"
+          android:layout_width="300dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="登     录"
+          android:textSize="30dp"
+          android:background="@drawable/buttons"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp" >
+      <ImageView
+          android:id="@+id/iv_word"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginLeft="20dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/logo5"
+          />
+      <ImageView
+          android:id="@+id/iv_search"
+          android:layout_width="50dp"
+          android:layout_height="55dp"
+          android:layout_marginLeft="60dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/logo6"
+          />
+      <ImageView
+          android:id="@+id/iv_save"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginLeft="50dp"
+          android:scaleType="fitXY"
+          android:src="@drawable/logo7"
+          />
+      <ImageView
+          android:id="@+id/iv_me"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:scaleType="fitXY"
+          android:layout_marginLeft="60dp"
+          android:src="@drawable/logo8"
+          />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</LinearLayout>

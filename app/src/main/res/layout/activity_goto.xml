@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#D9F7BE"
+    android:persistentDrawingCache="animation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/goto1"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/goto2"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/goto3"
+            android:scaleType="fitXY" />
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/ctl"
+            android:layout_width="300dp"
+            android:layout_height="350dp"
+            android:layout_marginBottom="580dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/image1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image3"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="260dp"
+                android:layout_marginTop="70dp"
+                android:elevation="20dp"
+                android:orientation="vertical"
+                app:cardCornerRadius="25dp"
+                app:cardMaxElevation="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/gotobg">
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/m_logo"/>
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cease To Struggle"
+                        android:textAlignment="center"
+                        android:textColor="#FFE58F"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Cease To Live"
+                        android:textAlignment="center"
+                        android:textColor="#FFE58F"
+                        android:textSize="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="424dp"
+            android:layout_marginBottom="423dp"
+            android:background="#092B00"
+            android:orientation="vertical"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/image1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@drawable/gotobtn"
+                        android:text="learn"
+                        android:textColor="#FFE58F" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:background="@drawable/gotobtn"
+                        android:text="review"
+                        android:textColor="#FFE58F" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/gotobtn"
+                        android:text="HangGame"
+                        android:textColor="#FFE58F" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

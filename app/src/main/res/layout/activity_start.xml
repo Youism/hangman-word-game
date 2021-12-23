@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/grid">
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/textdefaultfont"
+        android:text="基于HangMan游戏"
+        android:textColor="@color/black"
+        android:textFontWeight="600"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="25dp"
+        app:cardMaxElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9FB6A4"
+            android:fontFamily="@font/textdefaultfont"
+            android:text="HangMan，早在维多利亚时代已经流行，玩家需要在7步之内根据单词字母的数量猜出单词，否则小人将会被送上绞刑架哟~~~~~φ(゜▽゜*)♪"
+            android:textAlignment="center"
+            android:textColor="#D46B08"
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978">
+
+        <Button
+            android:id="@+id/btnCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/startbtn"
+            android:text="单词本"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_style"
+            android:text="Start"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnStartCustom"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_style"
+            android:text="自定义"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <Button
+            android:id="@+id/btndata"
+            android:layout_width="135dp"
+            android:layout_height="70dp"
+            android:background="@drawable/btn_style"
+            android:text="数据统计"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

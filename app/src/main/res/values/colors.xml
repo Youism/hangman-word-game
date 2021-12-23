@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="firebrick">#DC143C</color>
     <color name="grey">#808080</color>
+    <color name="green1">#7CB305</color>
+    <color name="green2">#092B00</color>
+    <color name="colorBg">#EBEEFF</color>
 </resources>

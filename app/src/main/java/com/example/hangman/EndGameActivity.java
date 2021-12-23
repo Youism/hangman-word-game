@@ -86,8 +86,8 @@ public class EndGameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(EndGameActivity.this);
-                alert.setTitle("Custom Word");
-                alert.setMessage("You can choose a custom word, and play the games with your friends!");
+                alert.setTitle("自定义单词");
+                alert.setMessage("你可以选择一个自定义单词");
 
                 final EditText input = new EditText(EndGameActivity.this);
                 input.setKeyListener(DigitsKeyListener.getInstance("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"));
@@ -131,16 +131,16 @@ public class EndGameActivity extends AppCompatActivity {
 
     public void checkResult(boolean won) {
         if (won) {
-            Glide.with(this).load(R.drawable.stickman_happy1).into(gif);
+            Glide.with(this).load(R.drawable.happy).into(gif);
         } else {
-            Glide.with(this).load(R.drawable.stickman_sad1).into(gif);
+            Glide.with(this).load(R.drawable.sad).into(gif);
         }
         gif.getLayoutParams().width = 700;
     }
 
     public void getWord(boolean won, String word) {
         if (won) {
-            result.setText("Good Job, Current Win Streak: " + GameHandler.getStreak());
+            result.setText("真厉害，目前的胜场是：" + GameHandler.getStreak());
         } else {
             result.setText(Html.fromHtml("游戏结束，你要猜的单词是：<font color='#FF0000'>" + word.toLowerCase() + "</font>"));
         }

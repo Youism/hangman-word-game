@@ -75,6 +75,7 @@ public class GameActivity extends AppCompatActivity {
 
 
         CurrentCategory = GameHandler.getCurrentCategory();
+        //当前背的单词
         CurrentWord = GameHandler.getNextWord().toUpperCase();
 //        CurrentWord = "happy".toUpperCase();
 
@@ -108,7 +109,7 @@ public class GameActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(GameActivity.this, MainActivity.class);
+                Intent i = new Intent(GameActivity.this, StartGameActivity.class);
                 music.stop();
                 startActivity(i);
             }
@@ -417,7 +418,7 @@ public class GameActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {//To Prevent Loading Earlier Intent States
-        Intent setIntent = new Intent(this, MainActivity.class);
+        Intent setIntent = new Intent(this, StartGameActivity.class);
         music.stop();
         startActivity(setIntent);
     }
